@@ -48,6 +48,24 @@
         color: #0b9b6b;
         /* padding-right: 1000px; */
       }
+      h2:before,
+      h2:after {
+        background-color: #0b9b6b;
+        content: "";
+        display: inline-block;
+        height: 5px;
+        position: relative;
+        vertical-align: middle;
+        width: 50%;
+      }
+      h2:before {
+        right: 0.5em;
+        margin-left: -50%;
+      }
+      h2:after {
+        left: 0.5em;
+        margin-right: -50%;
+      }
     </style>
   </head>
   <body>
@@ -118,10 +136,10 @@
     </section>
 
     <!-- Service -->
-    <section id="services" class="container service-style">
+    <section id="services" class="container-fluid service-style">
       <div class="row text-center">
-        <div class="col-12" style="margin-bottom: 100px">
-          <h2>Mengapa Memilih Kami</h2>
+        <div class="col-12 pb-4" style="margin-bottom: 100px">
+          <h2 class="display-4 text-center mb-5">Mengapa Memilih Kami</h2>
         </div>
 
         <div class="col-12 col-sm-6 col-lg-3">
@@ -163,7 +181,20 @@
     </section>
 
     <!-- Service -->
-    <section id="product">///</section>
+    <section id="product" class="container">
+      <div class="row-text-center">
+        <div class="col-12 pb-4">
+          <h2 class="display-4 text-center mb-5">Product Kami</h2>
+          <div class="col-md" mb-5>
+            <div class="card">
+              <div class="card-header">Header</div>
+              <div class="card-body">Card Body</div>
+              <div class="card-footer">Card Footer</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Service -->
     <section id="about">///</section>
